@@ -11,8 +11,9 @@
 		9855ADA920D6B9CC0046C235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9855ADA720D6B9CC0046C235 /* Main.storyboard */; };
 		9855ADAB20D6B9CD0046C235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9855ADAA20D6B9CD0046C235 /* Assets.xcassets */; };
 		9855ADAE20D6B9CD0046C235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9855ADAC20D6B9CD0046C235 /* LaunchScreen.storyboard */; };
-		9855ADB920D6B9CD0046C235 /* JLTechTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADB820D6B9CD0046C235 /* JLTechTestTests.swift */; };
 		9855ADC420D6B9CD0046C235 /* JLTechTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADC320D6B9CD0046C235 /* JLTechTestUITests.swift */; };
+		9855ADD620D6CACC0046C235 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADD520D6CACC0046C235 /* Product.swift */; };
+		9855ADDB20D6CB010046C235 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADDA20D6CB010046C235 /* ProductTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +41,13 @@
 		9855ADAD20D6B9CD0046C235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9855ADAF20D6B9CD0046C235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9855ADB420D6B9CD0046C235 /* JLTechTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLTechTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9855ADB820D6B9CD0046C235 /* JLTechTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLTechTestTests.swift; sourceTree = "<group>"; };
 		9855ADBA20D6B9CD0046C235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9855ADBF20D6B9CD0046C235 /* JLTechTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLTechTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9855ADC320D6B9CD0046C235 /* JLTechTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLTechTestUITests.swift; sourceTree = "<group>"; };
 		9855ADC520D6B9CD0046C235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9855ADD520D6CACC0046C235 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9855ADD920D6CB010046C235 /* JLTechTestTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLTechTestTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9855ADDA20D6CB010046C235 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 			children = (
 				9855ADA320D6B9CC0046C235 /* AppDelegate.swift */,
 				9855ADD120D6BAF80046C235 /* Resources */,
+				9855ADD320D6CAB10046C235 /* Product */,
 			);
 			path = JLTechTest;
 			sourceTree = "<group>";
@@ -104,8 +108,8 @@
 		9855ADB720D6B9CD0046C235 /* JLTechTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				9855ADB820D6B9CD0046C235 /* JLTechTestTests.swift */,
-				9855ADBA20D6B9CD0046C235 /* Info.plist */,
+				9855ADD720D6CAD50046C235 /* Product */,
+				9855ADD220D6CA840046C235 /* Resources */,
 			);
 			path = JLTechTestTests;
 			sourceTree = "<group>";
@@ -128,6 +132,47 @@
 				9855ADAF20D6B9CD0046C235 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9855ADD220D6CA840046C235 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9855ADD920D6CB010046C235 /* JLTechTestTests-Bridging-Header.h */,
+				9855ADBA20D6B9CD0046C235 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9855ADD320D6CAB10046C235 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				9855ADD420D6CABE0046C235 /* Entity */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		9855ADD420D6CABE0046C235 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9855ADD520D6CACC0046C235 /* Product.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9855ADD720D6CAD50046C235 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				9855ADD820D6CADA0046C235 /* Entity */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		9855ADD820D6CADA0046C235 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9855ADDA20D6CB010046C235 /* ProductTests.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +246,7 @@
 					};
 					9855ADB320D6B9CD0046C235 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = 9855AD9F20D6B9CC0046C235;
 					};
 					9855ADBE20D6B9CD0046C235 = {
@@ -262,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9855ADA420D6B9CC0046C235 /* AppDelegate.swift in Sources */,
+				9855ADD620D6CACC0046C235 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9855ADB920D6B9CD0046C235 /* JLTechTestTests.swift in Sources */,
+				9855ADDB20D6CB010046C235 /* ProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,9 +518,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LYC988S48;
-				INFOPLIST_FILE = JLTechTestTests/Info.plist;
+				INFOPLIST_FILE = JLTechTestTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,6 +529,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JLTechTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JLTechTestTests/Resources/JLTechTestTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLTechTest.app/JLTechTest";
@@ -492,9 +542,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LYC988S48;
-				INFOPLIST_FILE = JLTechTestTests/Info.plist;
+				INFOPLIST_FILE = JLTechTestTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,6 +553,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JLTechTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JLTechTestTests/Resources/JLTechTestTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLTechTest.app/JLTechTest";
