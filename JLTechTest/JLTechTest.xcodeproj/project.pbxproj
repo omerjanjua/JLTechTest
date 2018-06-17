@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9855ADA420D6B9CC0046C235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADA320D6B9CC0046C235 /* AppDelegate.swift */; };
-		9855ADA620D6B9CC0046C235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADA520D6B9CC0046C235 /* ViewController.swift */; };
 		9855ADA920D6B9CC0046C235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9855ADA720D6B9CC0046C235 /* Main.storyboard */; };
 		9855ADAB20D6B9CD0046C235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9855ADAA20D6B9CD0046C235 /* Assets.xcassets */; };
 		9855ADAE20D6B9CD0046C235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9855ADAC20D6B9CD0046C235 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		9855ADA020D6B9CC0046C235 /* JLTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9855ADA320D6B9CC0046C235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9855ADA520D6B9CC0046C235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9855ADA820D6B9CC0046C235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9855ADAA20D6B9CD0046C235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9855ADAD20D6B9CD0046C235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				9855ADA320D6B9CC0046C235 /* AppDelegate.swift */,
-				9855ADA520D6B9CC0046C235 /* ViewController.swift */,
-				9855ADA720D6B9CC0046C235 /* Main.storyboard */,
-				9855ADAA20D6B9CD0046C235 /* Assets.xcassets */,
-				9855ADAC20D6B9CD0046C235 /* LaunchScreen.storyboard */,
-				9855ADAF20D6B9CD0046C235 /* Info.plist */,
+				9855ADD120D6BAF80046C235 /* Resources */,
 			);
 			path = JLTechTest;
 			sourceTree = "<group>";
@@ -123,6 +117,17 @@
 				9855ADC520D6B9CD0046C235 /* Info.plist */,
 			);
 			path = JLTechTestUITests;
+			sourceTree = "<group>";
+		};
+		9855ADD120D6BAF80046C235 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9855ADA720D6B9CC0046C235 /* Main.storyboard */,
+				9855ADAA20D6B9CD0046C235 /* Assets.xcassets */,
+				9855ADAC20D6B9CD0046C235 /* LaunchScreen.storyboard */,
+				9855ADAF20D6B9CD0046C235 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9855ADA620D6B9CC0046C235 /* ViewController.swift in Sources */,
 				9855ADA420D6B9CC0046C235 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LYC988S48;
-				INFOPLIST_FILE = JLTechTest/Info.plist;
+				INFOPLIST_FILE = JLTechTest/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JLTechTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -450,7 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LYC988S48;
-				INFOPLIST_FILE = JLTechTest/Info.plist;
+				INFOPLIST_FILE = JLTechTest/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JLTechTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
