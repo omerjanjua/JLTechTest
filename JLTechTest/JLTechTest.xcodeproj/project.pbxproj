@@ -20,7 +20,7 @@
 		9855ADE920D6F83B0046C235 /* ProductInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADE820D6F83B0046C235 /* ProductInteractor.swift */; };
 		9855ADEB20D6F8430046C235 /* ImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADEA20D6F8430046C235 /* ImageInteractor.swift */; };
 		9855ADED20D6F8D00046C235 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADEC20D6F8D00046C235 /* Result.swift */; };
-		9855ADEF20D6FBC00046C235 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADEE20D6FBC00046C235 /* Fetcher.swift */; };
+		9855ADEF20D6FBC00046C235 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADEE20D6FBC00046C235 /* Interactor.swift */; };
 		9855ADF120D6FC020046C235 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855ADF020D6FC020046C235 /* DataParser.swift */; };
 		9855AE0F20D71E5F0046C235 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9855AE0E20D71E5F0046C235 /* SwiftyJSON.framework */; };
 		9855AE1020D71E5F0046C235 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9855AE0E20D71E5F0046C235 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -93,7 +93,7 @@
 		9855ADE820D6F83B0046C235 /* ProductInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInteractor.swift; sourceTree = "<group>"; };
 		9855ADEA20D6F8430046C235 /* ImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInteractor.swift; sourceTree = "<group>"; };
 		9855ADEC20D6F8D00046C235 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		9855ADEE20D6FBC00046C235 /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		9855ADEE20D6FBC00046C235 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		9855ADF020D6FC020046C235 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		9855AE0D20D71AF60046C235 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		9855AE0E20D71E5F0046C235 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -285,7 +285,7 @@
 			children = (
 				9855ADF020D6FC020046C235 /* DataParser.swift */,
 				9855AE1220D722BF0046C235 /* DefaultRequestFactory.swift */,
-				9855ADEE20D6FBC00046C235 /* Fetcher.swift */,
+				9855ADEE20D6FBC00046C235 /* Interactor.swift */,
 				9855AE1420D722F10046C235 /* JLRequest.swift */,
 				9855ADEC20D6F8D00046C235 /* Result.swift */,
 			);
@@ -512,7 +512,7 @@
 				9855ADA420D6B9CC0046C235 /* AppDelegate.swift in Sources */,
 				9855ADF120D6FC020046C235 /* DataParser.swift in Sources */,
 				9855ADDE20D6DA360046C235 /* ProductCollectionViewController.swift in Sources */,
-				9855ADEF20D6FBC00046C235 /* Fetcher.swift in Sources */,
+				9855ADEF20D6FBC00046C235 /* Interactor.swift in Sources */,
 				9855AE3B20D809440046C235 /* ProductDetailInteractor.swift in Sources */,
 				9855ADE020D6DB890046C235 /* ProductCell.swift in Sources */,
 				9855ADE920D6F83B0046C235 /* ProductInteractor.swift in Sources */,

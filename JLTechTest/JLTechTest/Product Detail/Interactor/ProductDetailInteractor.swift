@@ -15,7 +15,7 @@ protocol ProductDetailInteracting {
     func fetch(id: String, _ completion: @escaping (ProductDetailResult) -> ())
 }
 
-class ProductDetailInteractor: Fetcher<ProductDetail>, ProductDetailInteracting {
+class ProductDetailInteractor: Interactor<ProductDetail>, ProductDetailInteracting {
     
     init(request: Request) {
         super.init(request: request, parser: Parser())

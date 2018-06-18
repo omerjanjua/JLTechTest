@@ -13,7 +13,7 @@ protocol ProductInteracting {
     func fetch(completion: @escaping (ProductResult) -> ())
 }
 
-class ProductInteractor: Fetcher<[Product]>, ProductInteracting {
+class ProductInteractor: Interactor<[Product]>, ProductInteracting {
     
     init(request: Request) {
         super.init(request: request, parser: Parser())

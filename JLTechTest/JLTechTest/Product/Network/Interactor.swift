@@ -1,5 +1,5 @@
 //
-//  Fetcher.swift
+//  Interactor.swift
 //  JLTechTest
 //
 //  Created by Omer Janjua on 17/06/2018.
@@ -14,9 +14,9 @@ protocol Request {
     func get(from path: String, completion: @escaping Completion)
 }
 
-class Fetcher<ResultType> {
+class Interactor<ResultType> {
     
-    typealias FetcherResult = Result<ResultType, Error>
+    typealias InteractorResult = Result<ResultType, Error>
     private let request: Request
     private let parser: DataParser<ResultType>
     
@@ -25,13 +25,13 @@ class Fetcher<ResultType> {
         self.parser = parser
     }
     
-    func fetch(path: String, completion: @escaping (FetcherResult) -> ()) {
+    func fetch(path: String, completion: @escaping (InteractorResult) -> ()) {
         request.get(from: path) { [weak self] result in
             self?.handleResponse(result: result, completion: completion)
         }
     }
     
-    private func handleResponse(result: Request.RequestResult, completion: (FetcherResult) -> ()) {
+    private func handleResponse(result: Request.RequestResult, completion: (InteractorResult) -> ()) {
         switch result {
         case .failure(let error):
             completion(.failure(error))
