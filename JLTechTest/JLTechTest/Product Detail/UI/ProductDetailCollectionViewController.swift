@@ -14,7 +14,7 @@ protocol ProductDetailViewing: class {
     func showImage(_ image: UIImage)
 }
 
-class ProductDetailCollectionViewController: UICollectionViewController, ProductDetailViewing {
+class ProductDetailCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, ProductDetailViewing {
 
     var productDetail: ProductDetail?
     var image: UIImage?
@@ -46,10 +46,22 @@ class ProductDetailCollectionViewController: UICollectionViewController, Product
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let height: CGFloat
+        if indexPath.section == 0 {
+            height = 420
+        } else if indexPath.section == 1 {
+            height = 74
+        } else {
+            height = 920
+        }
+        return CGSize(width: collectionView.frame.width, height: height)
+    }
+
     // MARK: - ProductDetailView
     
     func showErrorMessage(_ message: String) {
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "John Lewis", message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .cancel)
         alert.addAction(okAction)
         present(alert, animated: true)

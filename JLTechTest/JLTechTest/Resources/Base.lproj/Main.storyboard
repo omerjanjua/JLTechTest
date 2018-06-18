@@ -103,11 +103,11 @@
         <scene sceneID="ANy-fR-75l">
             <objects>
                 <collectionViewController storyboardIdentifier="ProductDetailCollectionViewController" id="ID9-Zx-3MQ" customClass="ProductDetailCollectionViewController" customModule="JLTechTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ks5-19-OPb">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" id="ks5-19-OPb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zkk-T4-gpe" customClass="ProductDetailLayout" customModule="JohnLewis" customModuleProvider="target">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zkk-T4-gpe" customClass="ProductDetailLayout" customModule="JLTechTest" customModuleProvider="target">
                             <size key="itemSize" width="160" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>

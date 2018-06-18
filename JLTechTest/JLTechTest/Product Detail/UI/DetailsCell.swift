@@ -18,6 +18,6 @@ class DetailsCell: UICollectionViewCell {
     }
     
     func setText(_ text: String) {
-        detailsLabel.text = text
+        detailsLabel.attributedText = try? NSAttributedString(data: text.data(using: .utf8)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
     }
 }
