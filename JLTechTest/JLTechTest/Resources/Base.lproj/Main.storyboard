@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tza-rX-ahh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dishwashers-->
+        <scene sceneID="nU5-cS-mfg">
+            <objects>
+                <collectionViewController id="mQA-df-yEX" customClass="ProductCollectionViewController" customModule="JLTechTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wun-Bb-r49">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jlP-oF-D0P">
+                            <size key="itemSize" width="256" height="340"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productCell" id="WpE-Fv-izh" customClass="ProductCell" customModule="JLTechTest" customModuleProvider="target">
+                                <rect key="frame" x="59.5" y="0.0" width="256" height="340"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="256" height="340"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="IPd-Uc-kfs">
+                                            <rect key="frame" x="30" y="30" width="196" height="245"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hlr-rf-AAI" userLabel="Image">
+                                                    <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Hlr-rf-AAI" secondAttribute="height" multiplier="1:1" id="Cfq-6I-omv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dishwashers" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiM-fo-p2e" userLabel="Title">
+                                                    <rect key="frame" x="0.0" y="200" width="196" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74x-qM-KVT" userLabel="Price">
+                                                    <rect key="frame" x="0.0" y="224.5" width="196" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="IPd-Uc-kfs" firstAttribute="top" secondItem="WpE-Fv-izh" secondAttribute="top" constant="30" id="6BJ-Yd-kp7"/>
+                                    <constraint firstItem="IPd-Uc-kfs" firstAttribute="leading" secondItem="WpE-Fv-izh" secondAttribute="leading" constant="30" id="QwP-wC-5jT"/>
+                                    <constraint firstAttribute="trailing" secondItem="IPd-Uc-kfs" secondAttribute="trailing" constant="30" id="wDG-NR-Ehb"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="Hlr-rf-AAI" id="6ZD-gD-u3M"/>
+                                    <outlet property="priceLabel" destination="74x-qM-KVT" id="wx3-6C-vSi"/>
+                                    <outlet property="titleLabel" destination="LiM-fo-p2e" id="TGF-KQ-A01"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="mQA-df-yEX" id="KPt-Nr-xwR"/>
+                            <outlet property="delegate" destination="mQA-df-yEX" id="lNs-PT-FT2"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Dishwashers" id="RmW-Hn-B9I"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glO-Hf-tjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="159.67016491754123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bBH-uY-Edf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tza-rX-ahh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="irZ-tc-CnU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mQA-df-yEX" kind="relationship" relationship="rootViewController" id="9x7-gl-enS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pX-aa-gB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="159.67016491754123"/>
+        </scene>
+        <!--Product Detail Collection View Controller-->
+        <scene sceneID="ANy-fR-75l">
+            <objects>
+                <collectionViewController storyboardIdentifier="ProductDetailCollectionViewController" id="ID9-Zx-3MQ" customClass="ProductDetailCollectionViewController" customModule="JLTechTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" id="ks5-19-OPb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zkk-T4-gpe" customClass="ProductDetailLayout" customModule="JLTechTest" customModuleProvider="target">
+                            <size key="itemSize" width="160" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="pVo-CP-tOr" customClass="ImageCell" customModule="JLTechTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kt0-wd-e6c">
+                                            <rect key="frame" x="20" y="20" width="120" height="160"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Kt0-wd-e6c" secondAttribute="bottom" constant="20" id="R6E-9Q-9u8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kt0-wd-e6c" secondAttribute="trailing" constant="20" id="STR-dB-KC4"/>
+                                    <constraint firstItem="Kt0-wd-e6c" firstAttribute="top" secondItem="pVo-CP-tOr" secondAttribute="top" constant="20" id="fBa-S4-bNU"/>
+                                    <constraint firstItem="Kt0-wd-e6c" firstAttribute="leading" secondItem="pVo-CP-tOr" secondAttribute="leading" constant="20" id="q4u-uP-UxN"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="Kt0-wd-e6c" id="fQR-Qq-sLw"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailsCell" id="eYz-J7-H7f" customClass="DetailsCell" customModule="JLTechTest" customModuleProvider="target">
+                                <rect key="frame" x="215" y="0.0" width="160" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A multiline description of the product" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htU-aA-04R">
+                                            <rect key="frame" x="16" y="16" width="128" height="101.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="101.5" id="duI-3Y-iPD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="htU-aA-04R" secondAttribute="trailing" constant="8" id="BKM-jz-Tty"/>
+                                    <constraint firstItem="htU-aA-04R" firstAttribute="top" secondItem="eYz-J7-H7f" secondAttribute="topMargin" constant="8" id="dRK-m7-H1D"/>
+                                    <constraint firstItem="htU-aA-04R" firstAttribute="leading" secondItem="eYz-J7-H7f" secondAttribute="leadingMargin" constant="8" id="pRV-Tl-81W"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="detailsLabel" destination="htU-aA-04R" id="QCc-vJ-NWc"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PurchaseInformationCell" id="jX0-ws-4i3" customClass="PurchaseInformationCell" customModule="JLTechTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="210" width="160" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jA1-s3-VfO">
+                                            <rect key="frame" x="8" y="8" width="167" height="86"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAw-v2-n7X" userLabel="Price">
+                                                    <rect key="frame" x="0.0" y="0.0" width="44.5" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 years warranty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4m-vD-bzU">
+                                                    <rect key="frame" x="0.0" y="37" width="127" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="jA1-s3-VfO" firstAttribute="leading" secondItem="jX0-ws-4i3" secondAttribute="leading" constant="8" id="3ws-5u-wEH"/>
+                                    <constraint firstItem="jA1-s3-VfO" firstAttribute="top" secondItem="jX0-ws-4i3" secondAttribute="top" constant="8" id="Qol-gU-niu"/>
+                                    <constraint firstAttribute="trailing" secondItem="jA1-s3-VfO" secondAttribute="trailing" constant="8" id="WmG-mc-IOb"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="guaranteeLabel" destination="X4m-vD-bzU" id="NNp-VH-wXR"/>
+                                    <outlet property="priceLabel" destination="PAw-v2-n7X" id="1RP-N8-077"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ID9-Zx-3MQ" id="n9J-GJ-3pz"/>
+                            <outlet property="delegate" destination="ID9-Zx-3MQ" id="Yur-qG-bnH"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wqq-RU-JnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844" y="159"/>
+        </scene>
+    </scenes>
+</document>
