@@ -20,9 +20,7 @@ When a dishwasher is tapped, a new screen should be displayed showing the dishwa
 # Testing
 - I tested the presenters. If I was going to spend more time on this I would come back and implement some mocks for the UIAlertControllers and test those.
 
-# Notes
+# Points for Improvement
 - I used SwiftyJSON for the JSON parsing however if I was going to come back and refactor this I would make use of Codable which was introduced in Swift 4
 - The product detail screen is not finished up to the most pretty UI standards. If I was to come back and refactor this I would use all the images given in the API response for product details instead of just picking one from the array as done currently. 
-
-# Points for Improvement
 - Product Detail Screen landscape UI
